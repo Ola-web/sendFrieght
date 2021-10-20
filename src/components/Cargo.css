@@ -1,0 +1,148 @@
+.cargo {
+  background-color: white;
+  padding: 30px 50px;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.cargo__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.cargo__top-container {
+  display: flex;
+  align-items: center;
+}
+
+.cargo__top-dengerous {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-right: 20px;
+}
+
+.cargo__top-dengerous input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider.round,
+.slider.round::before {
+  border-radius: 34px;
+}
+
+.slider::before {
+  position: absolute;
+  content: '';
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:checked + .slider::before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.cargo__middle {
+  margin-bottom: 50px;
+}
+
+.cargo__middle-btn {
+  width: 350px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  background-color: gainsboro;
+}
+
+.cargo__middle-btn .total {
+  background-color: white;
+  padding: 12px 26px;
+  margin-left: 3px;
+  color: rgb(7, 70, 167);
+}
+
+.cargo__middle-btn .package {
+  margin-left: 30px;
+  background-color: transparent;
+}
+
+.cargo__middle-btn .total,
+.cargo__middle-btn .package {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 3px;
+}
+
+.cargo__bottom {
+  display: flex;
+  align-items: center;
+}
+
+.volume input,
+.weight input {
+  width: 178px;
+  height: 50px;
+  padding-left: 16px;
+  opacity: 0.6;
+}
+
+.volume input::placeholder {
+  position: relative;
+  left: 110px;
+}
+
+.volume span {
+  position: relative;
+  top: -24px;
+  left: -164px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  opacity: 0.9;
+  background-color: white;
+  z-index: 999;
+}
+
+.weight span {
+  position: relative;
+  top: -24px;
+  left: -166px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  opacity: 0.9;
+  background-color: white;
+  z-index: 999;
+}
+
+.weight input::placeholder {
+  position: relative;
+  left: 120px;
+}

@@ -1,0 +1,68 @@
+.services {
+  background-color: white;
+  padding: 30px 50px;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.service__bottom {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
+  column-gap: 30px;
+}
+
+.service__top > h4 {
+  padding-bottom: 35px;
+}
+
+.service__bottom-air {
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  cursor: pointer;
+  overflow: hidden;
+  width: 230px;
+  height: 90px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.service__bottom-air:hover {
+  background-color: rgb(7, 70, 167);
+}
+
+.service__bottom-air > p {
+  font-size: 0.9rem;
+}
+
+.service__bottom-air:hover > p {
+  color: white;
+}
+
+.service__bottom-air:hover > .flight,
+.service__bottom-air:hover > .inland {
+  fill: white;
+}
+
+.flight {
+  fill: #868686;
+  position: relative;
+  top: 25px;
+  right: -60px;
+}
+
+.inland {
+  fill: #868686;
+  position: relative;
+  top: 25px;
+  right: -20px;
+}
+
+.service__bottom-air > p {
+  color: gray;
+}
+.service__bottom-air > img {
+  position: relative;
+  top: 26px;
+  left: 60px;
+}

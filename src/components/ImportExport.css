@@ -1,0 +1,118 @@
+.importExport {
+  background-color: white;
+  padding: 30px 50px;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.importExport__middle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.importExport__middle-input-from,
+.importExport__middle-input-to {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.btn-imex {
+  width: 75px;
+  height: 45px;
+  border: none;
+  outline: 1px solid rgb(216, 216, 216);
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+}
+
+.importExport__middle-input-from > input {
+  border: none;
+  width: 373px;
+  height: 45px;
+  padding-left: 90px;
+  font-size: 1rem;
+  background-color: rgb(238, 238, 238);
+}
+.importExport__middle-input-to > input {
+  border: none;
+  width: 373px;
+  height: 45px;
+  padding-left: 68px;
+  font-size: 1rem;
+  background-color: rgb(238, 238, 238);
+}
+
+.importExport__middle-input-from > img,
+.importExport__middle-input-to > img {
+  position: absolute;
+  left: 10px;
+}
+.importExport__middle-input-from > span,
+.importExport__middle-input-to > span {
+  position: absolute;
+  left: 40px;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.importExport__middle-input-from > input::placeholder,
+.importExport__middle-input-to > input::placeholder {
+  font-size: 1rem;
+}
+
+.importExport__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.importExport__bottom-inputDate {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.importExport__bottom-inputDate > img {
+  position: absolute;
+  left: 10px;
+}
+.importExport__bottom-inputDate > input {
+  padding-left: 50px;
+  font-size: 1rem;
+}
+
+.importExport__bottom-inputDate > input,
+.importExport__bottom-incoterms > select,
+.importExport__bottom-cargo > input {
+  width: 300px;
+  height: 44px;
+  background-color: rgb(238, 238, 238);
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.importExport__bottom-incoterms {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.importExport__bottom-incoterms > img {
+  position: absolute;
+  right: 20px;
+}
+
+.importExport__bottom-incoterms > select {
+  appearance: none;
+  padding: 0 20px !important;
+}
+
+.importExport__bottom-cargo > input {
+  padding: 0 20px;
+}
